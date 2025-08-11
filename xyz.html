@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            margin: 5% auto;
+        
+        }
+        .box{
+            height: 200px;
+            width: 40%;
+            background-color: bisque;
+            animation-name: slideIn;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+
+
+        }
+        .box:hover{
+            /* transform: rotate(-120deg); */
+            /* transform:scale(1.1); */
+            /* transform: skewX(40deg); */
+            /* transform: skewY(40deg) */
+            /* transform: translateX(150px);
+            transform: translateX(100px); */
+        }
+        @keyframes slideIn {
+            from{
+                transform: translate(0,0);
+            }
+            to{
+                transform: translate(100%,50%);
+                opacity: 0.5;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is Box Animation</div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
